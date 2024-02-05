@@ -34,9 +34,10 @@ class FumettoController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show($id)
     {
-        //
+        $fumetto = Fumetto::find($id);
+        return view('fumetti.show', compact('fumetto'));
     }
 
     /**
