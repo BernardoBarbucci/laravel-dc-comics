@@ -15,7 +15,7 @@ use App\Http\Controllers\FumettoController;
 */
 
 Route::get('/', function () {
-    return view('layout.app');
+    return redirect()->route('fumetti.index');
 });
 
 Route::resource('fumetti', FumettoController::class);
