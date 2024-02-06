@@ -11,8 +11,8 @@
 </head>
 <body class="bg-dark">
     <header>
-        <h1 class="text-warning">
-            Enjoy Laravel!
+        <h1 class="text-warning text-center py-5">
+            Comics List
         </h1>
     </header>
     
@@ -20,8 +20,8 @@
         @yield('content')
     </main>
 
-    <footer>
-        <p class="text-warning">By Berna</p>
+    <footer class="pt-5">
+        <p class="text-warning ms-3">By Berna</p>
     </footer>
 </body>
 </html>
