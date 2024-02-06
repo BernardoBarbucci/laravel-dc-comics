@@ -19,3 +19,6 @@ Route::get('/', function () {
 });
 
 Route::resource('fumetti', FumettoController::class);
+
+// rotta per create
+Route::get('/fumetti/create', [FumettoController::class, 'create'])->name('fumetti.create');
