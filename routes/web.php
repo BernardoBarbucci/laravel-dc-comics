@@ -22,3 +22,6 @@ Route::resource('fumetti', FumettoController::class);
 
 // rotta per create
 Route::get('/fumetti/create', [FumettoController::class, 'create'])->name('fumetti.create');
+
+// rotta per store
+Route::post('/fumetti', [FumettoController::class, 'store'])->name('fumetti.store');
