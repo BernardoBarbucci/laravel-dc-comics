@@ -43,6 +43,8 @@ class FumettoController extends Controller
 
         $fumetto = Fumetto::create($newComic);
 
+        $fumetto->save();
+
         // reindirizza alla page
         return redirect()->route('fumetti.show', ['fumetto' => $fumetto->id]);
     }
