@@ -10,10 +10,18 @@
 
 </head>
 <body class="bg-dark">
-    <main>
+    <header>
         <h1 class="text-warning">
             Enjoy Laravel!
         </h1>
+    </header>
+    
+    <main>
+        @yield('content')
     </main>
+
+    <footer>
+        <p class="text-warning">By Berna</p>
+    </footer>
 </body>
 </html>
