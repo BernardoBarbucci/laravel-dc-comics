@@ -14,7 +14,7 @@
         <h1 class="text-warning text-center py-5">
             Comics List
         </h1>
-    </header>
+    </header> 
     
     <main>
         @yield('content')

@@ -1,7 +1,6 @@
 @extends('layout.app')
 
 @section('content')
-    <h1>Comics List</h1>
 
     <ul>
         @foreach($fumetti as $fumetto)
@@ -12,4 +11,10 @@
             </li>
         @endforeach
     </ul>
+
+    <div>
+        <a href="{{ route('fumetti.create') }}" class="btn btn-warning">
+            Utilizza questo pulsante per aggiungere un nuovo fumetto
+        </a>
+    </div>
 @endsection
