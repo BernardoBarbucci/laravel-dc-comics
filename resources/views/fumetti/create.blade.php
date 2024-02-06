@@ -1,7 +1,7 @@
 @extends('layout.app')
 
 @section('content')
-    <form action="{{ route('fumetti.store') }}" method="post" class="d-flex align-items-center flex-column">
+    <form action="{{ route('fumetti.store') }}" method="post" class="d-flex align-items-center flex-column mb-5">
         @csrf
         <div class="card mb-3" style="width: 24rem;">
             <div class="card-header py-3">
@@ -38,4 +38,8 @@
         
           <button type="sumbit" class="btn btn-success">Create Comic</button>
     </form>   
+
+    <div class="d-flex justify-content-center">
+        <a href="{{ route('fumetti.index') }}" class="btn btn-warning mt-3">Torna alla lista dei fumetti</a>
+    </div>
 @endsection
