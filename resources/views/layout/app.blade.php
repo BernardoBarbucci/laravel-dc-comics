@@ -9,9 +9,9 @@
     @vite('resources/js/app.js')
 
 </head>
-<body>
+<body class="bg-dark">
     <main>
-        <h1>
+        <h1 class="text-warning">
             Enjoy Laravel!
         </h1>
     </main>
