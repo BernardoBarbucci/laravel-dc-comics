@@ -33,7 +33,7 @@ class FumettoController extends Controller
             'title' => 'required|string',
             'description' => 'required|string',
             'thumb' => 'required|url',
-            'price' => 'required|numeric',
+            'price' => 'required|string',
             'series' => 'required|string',
             'sale_date' => 'required|date',
             'type' => 'required|string',
