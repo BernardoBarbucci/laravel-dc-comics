@@ -1,7 +1,7 @@
 @extends('layout.app')
 
 @section('content')
-    <form action="{{ route('fumetti.store') }}" method="post" class="d-flex align-items-center flex-column mb-5">
+    <form action="{{ route('fumetti.store') }}" method="POST" class="d-flex align-items-center flex-column mb-5">
         @csrf
         <div class="card mb-3" style="width: 24rem;">
             <div class="card-header py-3">
@@ -20,7 +20,11 @@
               </li>
               <li class="list-group-item py-3"> 
                 <label for="price" class="mb-2"><strong>Price:</strong></label> <br>
-                <input type="string" name="price" id="price" style="width: 22rem;">
+                <input type="number" name="price" id="price" style="width: 22rem;">
+              </li>
+              <li class="list-group-item py-3">
+                <label for="sale_date" class="mb-2"><strong>Sale Date:</strong></label> <br>
+                <input type="date" name="sale_date" id="sale_date" style="width: 22rem;">
               </li>
               <li class="list-group-item py-3">
                 <label for="series" class="mb-2"><strong>Series:</strong></label> <br>
@@ -36,7 +40,7 @@
             </ul>
           </div>
         
-          <button type="sumbit" class="btn btn-success">Create Comic</button>
+          <button type="submit" class="btn btn-success">Create Comic</button>
     </form>   
 
     <div class="d-flex justify-content-center">
