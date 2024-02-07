@@ -3,6 +3,7 @@
 @section('content')
     <form action="{{ route('fumetti.update', ['fumetto' => $fumetto->id]) }}" method="POST" class="d-flex align-items-center flex-column mb-5">
         @csrf
+
         <div class="card mb-3" style="width: 24rem;">
             <div class="card-header py-3">
                 <h3 class="text-center text-success"><strong>Create New Comic</strong></h3>
