@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Fumetto;
+use Illuminate\Support\Facades\Redirect;
 
 class FumettoController extends Controller
 {
@@ -61,9 +62,10 @@ class FumettoController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit($id)
     {
-        //
+        $fumetto = Fumetto::findOrFail($id);
+        return view('fumetti.edit', compact('fumetto'));
     }
 
     /**

@@ -1,7 +1,7 @@
 @extends('layout.app')
 
 @section('content')
-    <form action="{{ route('fumetti.store') }}" method="POST" class="d-flex align-items-center flex-column mb-5">
+    <form action="{{ route('fumetti.update', ['fumetto' => $fumetto->id]) }}" method="POST" class="d-flex align-items-center flex-column mb-5">
         @csrf
         <div class="card mb-3" style="width: 24rem;">
             <div class="card-header py-3">
