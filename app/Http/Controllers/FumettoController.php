@@ -30,16 +30,16 @@ class FumettoController extends Controller
      */
     public function store(Request $request)
     {
-        $newComic = $request->validate([
-            'title' => 'required|string',
-            'description' => 'required|string',
-            'thumb' => 'required|url',
-            'price' => 'required|string',
-            'series' => 'required|string',
-            'sale_date' => 'required|date',
-            'type' => 'required|string',
-            'artists' => 'required|array',
-            'writers' => 'required|array',
+        $request->validate([
+            'title' => ['required', 'string'],
+            'description' => ['required', 'string'],
+            'thumb' => ['required', 'url'],
+            'price' => ['required', 'string'],
+            'series' => ['required', 'string'],
+            'sale_date' => ['required', 'date'],
+            'type' => ['required', 'string'],
+            'artists' => ['required', 'array'],
+            'writers' => ['required', 'array'],
         ]);
 
         $fumetto = Fumetto::create($newComic);

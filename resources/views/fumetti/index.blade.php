@@ -6,6 +6,9 @@
         <a href="{{ route('fumetti.create') }}" class="btn btn-warning">
             Clicca qua per aggiungere un nuovo fumetto!
         </a>
+        <a href="{{ route('fumetti.edit', $fumetto->id) }}" class="btn btn-primary">
+          Modifica un fumetto esistente
+        </a>
     </div>
 
     <ul class="d-flex flex-wrap justify-content-center">

@@ -20,8 +20,10 @@ Route::get('/', function () {
 
 Route::resource('fumetti', FumettoController::class);
 
+Route::resource('fumetti', FumettoController::class)->except(['creat', 'store']);
+
 // // rotta per create
-// Route::get('/fumetti/create', [FumettoController::class, 'create'])->name('fumetti.create');
+Route::get('/fumetti/create', [FumettoController::class, 'create'])->name('fumetti.create');
 
 // // rotta per store
-// Route::post('/fumetti', [FumettoController::class, 'store'])->name('fumetti.store');
+Route::post('/fumetti', [FumettoController::class, 'store'])->name('fumetti.store');
